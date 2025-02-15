@@ -20,7 +20,7 @@ function takeOutTrash() {
 
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-            console.log('YOU take out the trash');
+            resolve('YOU take out the trash');
     
         },500)
     })
