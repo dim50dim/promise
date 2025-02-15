@@ -26,3 +26,8 @@ function takeOutTrash() {
     })
 }
 
+walkDog().then(value => {console.log(value); return cleanKitchen()})
+          .then(value => {console.log(value); return takeOutTrash()  })
+           .then(value => {console.log(value); console.log('FINISH');
+           
+           })
