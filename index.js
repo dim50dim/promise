@@ -1,20 +1,29 @@
-function walkDog(callback) {
-    setTimeout(() => {
-        console.log('YOU WALK THE DOG');
-        callback();
-    },1500)
+function walkDog() {
+   
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            resolve('YOU WALK THE DOG');
+        
+        },1500)
+    })
 }
-function cleanKitchen(callback) {
-    setTimeout(() => {
-        console.log('YOU clean the kitchen');
-        callback();
-    },2500)
+function cleanKitchen() {
+ 
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            resolve('YOU clean the kitchen');
+        
+        },2500)
+    })
 }
-function takeOutTrash(callback) {
-    setTimeout(() => {
-        console.log('YOU take out the trash');
-        callback();
-    },500)
+function takeOutTrash() {
+
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            console.log('YOU take out the trash');
+    
+        },500)
+    })
 }
 
 walkDog(() => {
