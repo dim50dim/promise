@@ -10,3 +10,9 @@ function cleanKitchen() {
         
     },2500)
 }
+function takeOutTrash() {
+    setTimeout(() => {
+        console.log('YOU take out the trash');
+        
+    },500)
+}
