@@ -2,7 +2,13 @@ function walkDog() {
    
     return new Promise((resolve,reject) => {
         setTimeout(() => {
+           const dogWalk = true;
+             if(dogWalk) {
+                
             resolve('YOU WALK THE DOG');
+             }else{
+                reject('ERROR')
+             }
         
         },1500)
     })
@@ -10,6 +16,8 @@ function walkDog() {
 function cleanKitchen() {
  
     return new Promise((resolve,reject) => {
+        
+
         setTimeout(() => {
             resolve('YOU clean the kitchen');
         
