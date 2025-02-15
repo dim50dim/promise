@@ -26,11 +26,3 @@ function takeOutTrash() {
     })
 }
 
-walkDog(() => {
-    cleanKitchen(() =>{
-        takeOutTrash(() => {
-            console.log('you finish');
-            
-        })
-    })
-})
