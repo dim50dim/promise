@@ -49,7 +49,12 @@ document.querySelector('.b-4').onclick = f4;
 // На странице есть input c классом i-5, куда пользователь может ввести число. Есть кнопка b-5 которая запускает функцию f5. Функция должна вывести в .out-5 символ 'm' если число меньше нуля, 0 если число равно нулю и число 1 если больше.
 
 function f5(){
-
+   let out = '';
+   let num = +document.querySelector('.i-5').value;
+    if(num < 0) out = 0;
+    if(num === 0) out = 'm';
+    if(num > 0) out = 1;
+ document.querySelector('.out-5').innerHTML = out;
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -59,7 +64,8 @@ document.querySelector('.b-5').onclick = f5;
 // На странице есть input с классом i-6, куда пользователь может ввести число. Есть кнопка .b-6 которая запускает функцию f6. Функция должна вывести в  .out-6  слово even если число четное и odd если нечетное. Для проверки четности используется целочисленный остаток от деления на 2 (оператор %). Если остаток равен нулю  - четное, нет - нечетное.
 
 function f6(){
-
+  let num = +document.querySelector('.i-6').value;
+  document.querySelector('.out-6').innerHTML = num % 2 === 0 ? 'even' : 'odd';
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -68,7 +74,9 @@ document.querySelector('.b-6').onclick = f6;
 // Даны 2 input - .i-71 и .i-72, оба - input[type=number]. При нажатии кнопки .b-7 срабатывает функция f7. Функция должна число из .i-71 возвести в степень .i-72, вывести результат в  .out-7. Для возведения в степень можно использовать **, или Math.pow.
 
 function f7(){
-
+   let a = +document.querySelector('.i-71').value;
+   let b = +document.querySelector('.i-72').value;
+   document.querySelector('.out-7').innerHTML = Math.pow(a,b)
 }
 
 document.querySelector('.b-7').onclick = f7;
