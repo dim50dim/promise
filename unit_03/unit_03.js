@@ -88,15 +88,15 @@ function f8(){
 let num = document.querySelector('.s-8').value;
 let out = '';
  switch (num) {
-        case 1 :
+        case '1' :
          out = 'one';
          break;
         
-        case (2) :
+        case '2' :
          out = 'two';
          break;
         
-        case (3) :
+        case '3' :
          out = 'three';
          break;
         
@@ -114,7 +114,15 @@ document.querySelector('.b-8').onclick = f8;
 //  В противном случае, вывести 0.
 
 function f9(){
-
+   let num = document.querySelector('.i-9').value;
+   let out = '';
+  if(num >= 1 && num <= 32) out = 1;
+  if(num >= 33 && num <= 43) out = 2;
+  if(num >= 44 && num <= 64) out = 3;
+  else out = 0;
+   
+    document.querySelector('.out-9').innerHTML = out;
+   
 }
 
 document.querySelector('.b-9').onclick = f9;
