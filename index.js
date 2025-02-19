@@ -2,7 +2,7 @@ function walkDog() {
    
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-           const dogWalk = true;
+           const dogWalk = false;
              if(dogWalk) {
                 
             resolve('YOU WALK THE DOG');
@@ -46,6 +46,5 @@ function takeOutTrash() {
 
 walkDog().then(value => {console.log(value); return cleanKitchen()})
           .then(value => {console.log(value); return takeOutTrash()  })
-           .then(value => {console.log(value); console.log('FINISH');
-           
-           })
+           .then(value => {console.log(value); console.log('FINISH')    })
+           .catch(error => console.error('errorrrrrr'));
