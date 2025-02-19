@@ -85,7 +85,23 @@ document.querySelector('.b-7').onclick = f7;
 // Дан select s-8, который содержит 3 значения: 1, 2, 3. Дана кнопка b-8. При ее  нажатии срабатывает функция f8. Функция должна получить выбранное в select число, потом с помощью switch case сравнить его поочередно с 1, 2, 3. И если число выбрано - 1, то вывести в .out-8 строку one, если 2 - two, если 3 - three. Напоминаю - это программирование. Как указано в задании - так и выводим. Т.е. Three с большой буквы - ошибка!!!
 
 function f8(){
-
+let num = document.querySelector('.s-8').value;
+let out = '';
+ switch (num) {
+        case 1 :
+         out = 'one';
+         break;
+        
+        case (2) :
+         out = 'two';
+         break;
+        
+        case (3) :
+         out = 'three';
+         break;
+        
+ }
+ document.querySelector('.out-8').innerHTML = out;
 }
 
 document.querySelector('.b-8').onclick = f8;
