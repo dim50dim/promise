@@ -2,7 +2,8 @@
 // При нажатии кнопки .b-1 срабатывает функция f1. Функция должна прочитать содержимое .i-1 и сравнить его с числом 4 (сравнение ==). Результат сравнения - true или false выведите в .out-1.
 
 function f1(){
-
+   let num = document.querySelector('.i-1').value;
+   document.querySelector(".out-1").innerHTML = num === '7';
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -15,7 +16,7 @@ let a21 = 45;
 let a22 = 32;
 
 function f2(){
-
+   document.querySelector(".out-2").innerHTML = a21 > a22;
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -26,6 +27,8 @@ document.querySelector('.b-2').onclick = f2;
 // Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.
 
 function f3(){
+  let a  = +document.querySelector('.i-31').value;
+  let b  = +document.querySelector('.i-32').value;
 
 }
 
